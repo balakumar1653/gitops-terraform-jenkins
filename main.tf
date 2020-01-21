@@ -1,15 +1,15 @@
 # Terraform state will be stored in S3
 terraform {
   backend "s3" {
-    bucket = "terraform-bucket-alex"
+    bucket = "terraform-bucket-lokesh"
     key    = "terraform.tfstate"
-    region = "us-east-1"
+    region = "ap-southeast-1"
   }
 }
 
 # Use AWS Terraform provider
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-southeast-1"
 }
 
 # Create EC2 instance
@@ -22,13 +22,13 @@ resource "aws_instance" "default" {
   instance_type          = var.instance_type
 
   tags = {
-    Name = "terraform-default"
+    Name = "terraform-jenkins"
   }
 }
 
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
-  name = "terraform-default-sg"
+  name = "terraform-jenkins-sg"
 
   ingress {
     from_port   = 80
