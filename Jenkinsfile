@@ -100,6 +100,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
+          AWS_DEFAULT_REGION = 'ap-south-1'
           sh 'aws stepfunctions start-execution --state-machine-arn arn:aws:states:ap-south-1:148391135058:stateMachine:TripleLambda'
         }
       }
