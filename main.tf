@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-bucket-lokesh"
-    key    = "terraform.tfstate"
+    key    = "TERRAFORM.tfstate"
     region = "ap-southeast-1"
   }
 }
