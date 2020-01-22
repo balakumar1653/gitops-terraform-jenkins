@@ -28,7 +28,7 @@ resource "aws_instance" "default" {
 
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
-  name = "terraform-jenkins-new-sg"
+  name = "sample-sg"
 
   ingress {
     from_port   = 80
@@ -36,5 +36,10 @@ resource "aws_security_group" "default" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
-
+ingress {
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 }
