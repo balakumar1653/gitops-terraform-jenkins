@@ -4,12 +4,12 @@ variable "instance_count" {
 
 variable "key_name" {
   description = "Private key name to use with instance"
-  default     = "JenkinsDemo"
+  default     = "JenkinsDemoSydney"
 }
 
 variable "instance_type" {
   description = "AWS instance type"
-  default     = "t3.small"
+  default     = "t3.medium"
 }
 
 variable "ami" {
