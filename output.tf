@@ -1,3 +1,3 @@
-output-stack "instance_ips" {
+output "instance_ips" {
   value = ["${aws_instance.default.*.public_ip}"]
 }
