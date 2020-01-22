@@ -28,7 +28,7 @@ resource "aws_instance" "default" {
 
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
-  name = "sample-sg"
+  name = "terraform-default-sg"
 
   ingress {
     from_port   = 80
