@@ -90,6 +90,21 @@ try {
         }
       }
     }
+     // Invoking StepFunctions
+  stage('StepFunction') {
+    node {
+      withCredentials([[
+        $class: 'AmazonWebServicesCredentialsBinding',
+        credentialsId: credentialsId,
+        accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
+      ]]) {
+        ansiColor('xterm') {
+          sh 'aws configure'
+        }
+      }
+    }
+  }
     
   }
   currentBuild.result = 'SUCCESS'
