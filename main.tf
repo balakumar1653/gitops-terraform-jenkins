@@ -22,13 +22,13 @@ resource "aws_instance" "default" {
   instance_type          = var.instance_type
 
   tags = {
-    Name = "CICD-terraform-jenkins-sample"
+    Name = "Terraform-Jenkins"
   }
 }
 
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
-  name = "CICD-terraform-jenkins-sample-sg"
+  name = "terraform-jenkins-new-sg"
 
   ingress {
     from_port   = 80
