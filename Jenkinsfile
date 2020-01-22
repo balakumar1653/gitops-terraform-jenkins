@@ -100,7 +100,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh 'aws configure'
+          sh 'aws stepfunctions start-execution --state-machine-arn arn:aws:states:ap-south-1:148391135058:stateMachine:TripleLambda'
         }
       }
     }
