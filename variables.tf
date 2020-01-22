@@ -16,5 +16,5 @@ variable "ami" {
   description = "Base AMI to launch the instances"
 
   # Bitnami Lamp AMI
-  default = "ami-0c8322163437528e0"
+  default = "ami-038acccf3cc2c0669"
 }
