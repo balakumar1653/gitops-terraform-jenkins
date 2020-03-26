@@ -11,7 +11,7 @@ variable "subnet_cidr" {
 }
 variable "avlzone" {
   type    = "list"
-  default = ["ap-northeast-1a", "ap-northeast-1b"]
+  default = ["ap-northeast-1a", "ap-northeast-1d"]
 }
 variable "webservers_ami" {
   default = "ami-0dacc1250335dab23"
