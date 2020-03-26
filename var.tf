@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "us-east-1"
+  default = "ap-northeast-1"
 }
 variable "vpc_cidr" {
   default = "10.20.0.0/16"
@@ -14,7 +14,7 @@ variable "avlzone" {
   default = ["us-east-1a", "us-east-1b"]
 }
 variable "webservers_ami" {
-  default = "ami-062f7200baf2fa504"
+  default = "ami-0dacc1250335dab23"
 }
 
 variable "instance_type" {
