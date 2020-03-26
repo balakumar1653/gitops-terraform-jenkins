@@ -84,7 +84,7 @@ dimensions = {
     AutoScalingGroupName = "${aws_autoscaling_group.autoscaling-group-app.name}"
   }
 
-  alarm_description = "This metric monitor EC2 instance CPU utilization"
+  alarm_description = "This metric will monitor EC2 instance CPU utilization"
   alarm_actions = ["${aws_autoscaling_policy.avg_cpu_alert_60.arn}"]
 }
 
