@@ -1,5 +1,5 @@
 variable "aws_region" {
-  default = "ap-northeast-1"
+  default = "ap-southeast-2"
 }
 variable "vpc_cidr" {
   default = "10.20.0.0/16"
@@ -11,10 +11,10 @@ variable "subnet_cidr" {
 }
 variable "avlzone" {
   type    = "list"
-  default = ["ap-northeast-1a", "ap-northeast-1d"]
+  default = ["ap-southeast-2a", "ap-southeast-2b"]
 }
 variable "webservers_ami" {
-  default = "ami-0dacc1250335dab23"
+  default = "ami-038acccf3cc2c0669"
 }
 
 variable "instance_type" {
