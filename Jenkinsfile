@@ -9,7 +9,7 @@ try {
     }
   }
 
-  // Check Terraform version
+  // Verify Terraform version
   stage('version') {
     node {
       withCredentials([[

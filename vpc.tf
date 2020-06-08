@@ -34,11 +34,7 @@ resource "aws_route_table" "public_rt" {
   }
 
 }
-
-
 # Attach route table with public subnets
-
-
 resource "aws_route_table_association" "a" {
   count          = "${length(var.subnet_cidr)}"
   subnet_id      = "${element(aws_subnet.public.*.id, count.index)}"

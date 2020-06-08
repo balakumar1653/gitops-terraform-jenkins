@@ -2,6 +2,6 @@
 
 yum install httpd -y
 
-echo "<h1>Deployed by terraform! </h1>" > /var/www/html/index.html
+echo "<h1>Terraform Automation with Terraform </h1>" > /var/www/html/index.html
 chkconfig httpd on
 service httpd start

@@ -21,7 +21,7 @@ resource "aws_elb" "app-elb" {
   cross_zone_load_balancing   = true
   idle_timeout                = 100
   connection_draining         = true
-  connection_draining_timeout = 300
+  connection_draining_timeout = 240
 
  }
 
